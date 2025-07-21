@@ -20,7 +20,7 @@ namespace Race
                 int numPlayers = Convert.ToInt32(Console.ReadLine());
                 if(numPlayers < 2)
                 {
-                    Console.WriteLine("Should not less that 2");
+                    Console.WriteLine("Players should not less that 2");
                     continue;
                 }
                 int trackLength = 100;
