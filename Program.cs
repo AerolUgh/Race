@@ -18,6 +18,11 @@ namespace Race
                 Console.Clear();
                 Console.Write("Enter number of players: ");
                 int numPlayers = Convert.ToInt32(Console.ReadLine());
+                if(numPlayers < 2)
+                {
+                    Console.WriteLine("Should not less that 2");
+                    continue;
+                }
                 int trackLength = 100;
                 int[] positions = new int[numPlayers];
                 Random rand = new Random();
